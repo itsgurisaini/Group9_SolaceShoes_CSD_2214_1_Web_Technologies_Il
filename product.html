@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header starts -->
+    <!-- <header> -->
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <a href="index.html">Solace Shoes</a>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <!-- </header> -->
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <section id="section-productInfo">
+            <div class="container-element">
+                <div class="product-wrapper">
+                    <div class="product-name">
+                        <h1>Shoe Nike</h1>
+                    </div>
+                    <div class="product-wrapper-child">
+                        <img src="./images/shoes/item-1.jpg" alt="">
+                    </div>
+                    <div class="product-wrapper-child">
+                        <p>
+                            Adidas series of badminton shoes are designed with power weave woven forefoot material upper
+                            that is the perfect combination of flexibility ,breathability that improves performance and
+                            the highly responsive EVA midsole maintain forefoot propulsion to accelerate your game.
+                            Non-marking rubber outsole provides high wear durability.
+                        </p>
+
+                        <p class="product-price"><b>Price: $35.00</b></p>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h1 style="text-align: center; font-size: 28px;">Place Your Order</h1>
+                    <form action="#" onsubmit="return validateAddToCartForm()">
+                        <div class="form-element">
+                            <label for="">Name</label> <br>
+                            <input type="text" placeholder="Your Name" name="name">
+                        </div>
+                        <div class="form-element">
+                            <label for="">Email</label> <br>
+                            <input type="email" placeholder="Your Email" name="email">
+                        </div>
+                        <div class="form-element">
+                            <label for="">Phone</label> <br>
+                            <input type="text" placeholder="Your Phone" name="phone">
+                        </div>
+                        <div class="form-element">
+                            <label for="">City</label> <br>
+                            <input type="text" placeholder="Your City" name="city">
+                        </div>
+                        <div class="form-element">
+                            <label for="">Zipcode</label> <br>
+                            <input type="text" placeholder="Your Zipcode" name="zipcode">
+                        </div>
+                        <br>
+
+                        <button id="buy-now">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container-element">
+            <div class="footer-text">
+                <div class="footer-partitions">
+                    <h3>Solace Shoes</h3>
+                    <p>L.L.Bean - The Outside Is Inside Everything We Make.Founded in 1912 by Leon Leonwood Bean, L.L.Bean offers thousands of high-quality products at reasonable prices. All made to last and backed by our legendary customer service. Discover the comfort and classic styles of our Men's clothing, Women's clothing and Kids' clothing along with L.L.Bean Boots, shoes and slippers. 
+                    </p>
+                    <ul class="social-links">
+                        <li class="">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-partitions">
+                    <h3>Information</h3>
+                    <ul>
+                        <li class="">
+                            <span>ABOUT US</span>
+                        </li>
+                        <li class="">
+                            <span>DELIVERY INFORMATION</span>
+                        </li>
+                        <li class="">
+                            <span>PRIVACY POLICY</span>
+                        </li>
+                        <li class="">
+                            <span>SUPPORT</span>
+                        </li>
+                        <li class="">
+                            <span>ORDER TRACKING</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-partitions">
+                    <h3>CONTACT INFORMATION</h3>
+                    <p>
+                        291 SOUTH 21TH STREET,
+                        SUITE 721 NEW YORK NY 10016.
+                    </p>
+                    <p>
+                        + 1235 2355 98
+                    </p>
+                    <p>
+                        INFO@YOURSITE.COM
+                    </p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2021 All rights reserved | Developed by Group 9 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./database/orders.js"></script>
+</body>
+
+</html>

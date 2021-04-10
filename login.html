@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Solace Shoes</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header starts -->
+    <!-- <header> -->
+        <nav class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <a href="index.html">Solace Shoes</a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="Login.html">Login</a>
+            </div>
+        </nav>
+    <!-- </header> -->
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <div class="login-wrapper">
+            <div class="root-container" id="root-container">
+                <div class="form-container sign-up-container">
+                    <form class="login-form" onsubmit="return validateSignupForm()">
+                        <h1>Create Account</h1>
+                        <span>use your email for registration</span>
+                        <input type="text" placeholder="Name" name="name" />
+                        <input type="email" placeholder="Email" name="email" />
+                        <input type="password" placeholder="Password" name="password" />
+                        <button class="user-button" id="signupUser">Sign Up</button>
+                    </form>
+                </div>
+                
+            <div class="form-container sign-in-container">
+                    <form class="login-form" onsubmit="return validateLoginForm()">
+                        <h1>Sign in</h1>
+                        <span>use your account</span>
+                        <input type="email" placeholder="Email" name="email" />
+                        <input type="password" placeholder="Password" name="password" />
+                        <button class="user-button" id="signInUser">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container-element">
+            <div class="footer-text">
+                <div class="footer-partitions">
+                    <h3>Solace Shoes</h3>
+                    <p>L.L.Bean - The Outside Is Inside Everything We Make.Founded in 1912 by Leon Leonwood Bean, L.L.Bean offers thousands of high-quality products at reasonable prices. All made to last and backed by our legendary customer service. Discover the comfort and classic styles of our Men's clothing, Women's clothing and Kids' clothing along with L.L.Bean Boots, shoes and slippers. 
+                    </p>
+                    <ul class="social-links">
+                        <li class="">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-partitions">
+                    <h3>Information</h3>
+                    <ul>
+                        <li class="">
+                            <span>ABOUT US</span>
+                        </li>
+                        <li class="">
+                            <span>DELIVERY INFORMATION</span>
+                        </li>
+                        <li class="">
+                            <span>PRIVACY POLICY</span>
+                        </li>
+                        <li class="">
+                            <span>SUPPORT</span>
+                        </li>
+                        <li class="">
+                            <span>ORDER TRACKING</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-partitions">
+                    <h3>CONTACT INFORMATION</h3>
+                    <p>
+                        291 SOUTH 21TH STREET,
+                        SUITE 721 NEW YORK NY 10016.
+                    </p>
+                    <p>
+                        + 1235 2355 98
+                    </p>
+                    <p>
+                        INFO@YOURSITE.COM
+                    </p>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2021 All rights reserved | Developed by Group 9 </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./database/login.js"></script>
+</body>
+
+</html>
