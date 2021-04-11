@@ -1,7 +1,7 @@
 let db = openDatabase('shoesCollection', '1.0', 'Test DB', 2 * 1024 * 1024);
 
 $(function () {
-    // Register User
+    // Sign up 
     $("#signupUser").click(function (e) {
         db.transaction(function (query) {
             let sql = "CREATE TABLE IF NOT EXISTS users " +
