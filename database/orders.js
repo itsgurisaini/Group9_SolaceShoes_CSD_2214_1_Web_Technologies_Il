@@ -89,7 +89,7 @@ $(function () {
                         let price = ((row.price).match(/(\d+.\d+)|(\d+)|(.\d+)/g) || [])[0];
 
                         console.log(`${date}, ${productname}, ${price}`);
-                        $("table > tbody").append('<tr><td>' + productname + '</td><td>' + '1' + '</td><td>'+ price +'</td></tr>');
+                        $("table > tbody").append('<tr><td>' + productname + '</td><td>' + '1' + '</td><td>$'+ price +'</td></tr>');
                     }
                 } else {
                     alert("Nothing is purchased yet.");
